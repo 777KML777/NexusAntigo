@@ -32,3 +32,15 @@ fun ScreenLogin(navController: NavController) {
         }
     }
 }
+
+// TODO
+// LoginScreen --> Images
+// LoginScreen --> Learn about Position
+// LoginScreen --> Set mock data for app's users
+
+// ScreenHome --> Implement ViewPager on ScreenHome
+
+// App --> Install Font
+// App --> Set application's icon
+// App --> Set & Use Components including ViewPager
+// LoginScreen --> Api Authentication
