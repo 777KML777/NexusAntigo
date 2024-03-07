@@ -59,6 +59,6 @@ As categorias referem-se aos tipos de inputs que os colaboradores podem enviar a
 
 Ao final de um ciclo, determinado pelo administrador da empresa, o colaborador mais bem ranqueado poderá resgatar bonificações. Essas bonificações podem ser oferecidas por parceiros da plataforma, como o resgate de milhas ou pontos de cartões de crédito, ou até mesmo uma bonificação financeira.
 
-`Plataformas`
+## Plataformas
 
 O Projeto Nexus será desenvolvido para desktop, Android e iOS. `Esses requisitos básicos são apenas o ponto de partida, e esperamos expandir nossos horizontes à medida que avançamos nessa jornada de transformação.`
