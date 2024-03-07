@@ -151,7 +151,7 @@ fun ScreenLogin(navController: NavController) {
             OutlinedButton(
                 modifier = Modifier
                     .fillMaxWidth()
-                    //.padding(horizontal =  32.dp)
+                    .padding(horizontal =  32.dp)
                     .padding(
                         start = 16.dp,
                         top = 20.dp,
