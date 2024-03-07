@@ -1,6 +1,8 @@
 package br.com.nexus.screens
 
+import RadioButtonComponent
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -8,8 +10,13 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonColors
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.ShapeDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -17,6 +24,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -88,16 +97,20 @@ fun ScreenLogin(navController: NavController) {
                         bottom = 0.dp
                     )
             )
+
+            // Forgot Your Password
             Button(
                 modifier = Modifier
                     .fillMaxWidth()
-                    //.padding(horizontal =  32.dp)
                     .padding(
                         start = 16.dp,
                         top = 20.dp,
                         end = 16.dp,
                         bottom = 0.dp
-                    ),
+                    )
+                    .wrapContentWidth(Alignment.End, true),
+                colors = ButtonDefaults.buttonColors(Color.Unspecified),
+
                 onClick = {
 
                 }
@@ -109,9 +122,7 @@ fun ScreenLogin(navController: NavController) {
 
 
             //Radio Button
-            Text(
-                text = "Manter-me conectado"
-            )
+            RadioButtonComponent()
 
             Button(
                 modifier = Modifier
