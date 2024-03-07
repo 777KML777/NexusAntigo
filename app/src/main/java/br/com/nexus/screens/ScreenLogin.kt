@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.ShapeDefaults
 import androidx.compose.material3.Text
@@ -24,6 +25,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Outline
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.text.font.FontWeight
@@ -124,6 +126,7 @@ fun ScreenLogin(navController: NavController) {
             //Radio Button
             RadioButtonComponent()
 
+
             Button(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -136,14 +139,16 @@ fun ScreenLogin(navController: NavController) {
                     ),
                 onClick = {
 
-                }
+                },
+                shape = RectangleShape
+
             ) {
                 Text(
                     text = "Entrar"
                 )
             }
 
-            Button(
+            OutlinedButton(
                 modifier = Modifier
                     .fillMaxWidth()
                     //.padding(horizontal =  32.dp)
@@ -155,7 +160,9 @@ fun ScreenLogin(navController: NavController) {
                     ),
                 onClick = {
 
-                }
+                },
+                //shape = RectangleShape,
+                border = ButtonDefaults.outlinedButtonBorder
             ) {
                 Text(
                     text = "Entrar com uma conta Google"
