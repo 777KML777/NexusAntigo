@@ -58,7 +58,7 @@ fun ScreenLogin(navController: NavController) {
                 fontFamily = WorkSans,
                 fontWeight = FontWeight.Bold,
                 fontSize = 24.sp,
-                text = "PLATAFORMA",
+                text = "Nexus",
             )
 
             var email = remember {
